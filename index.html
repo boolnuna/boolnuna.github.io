@@ -5,15 +5,37 @@
     <h1>Jared honey bunches</h1>
     <h2>wowza</h2>
     <p>Welcome back </p>
-    <a href="/game">game</a>
-    <button>click this to win 1000 doll</button>
+    <a href="/game">
+        <div class="btn"> FlatMobile </div>
+    </a>
 </body>
 <style>
-body {
-    font-family:sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(110, 13, 86);
-}
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
+
+    body {
+        font-family: 'Bebas Neue', cursive;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(54, 45, 50);
+    }
+    h1,h2 {
+        letter-spacing: 3px;
+    }
+    p {
+        font-family:'Lato', sans-serif;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    .btn {
+        padding: 1rem;
+        background-color: rgb(63, 52, 58);
+        color: rgb(255, 255, 255);
+        border: 2px solid black;
+        letter-spacing: 4px;
+        font-size: larger;
+    }
 </style>
