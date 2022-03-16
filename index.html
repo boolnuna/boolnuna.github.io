@@ -7,8 +7,10 @@
     <h1>Jared's honey bunches</h1>
     <h2>wowza</h2>
     <p>Welcome back </p>
-    <div class="btn" onclick="$('iframe').show();$(this).hide()"> FlatMobile </div>
-    <iframe src="/game" frameborder="0" width=1000 height=700 style="display: none;"></iframe>
+    <div class="btn" onclick="$('#flatmobile').show();$(this).hide()"> FlatMobile </div>
+    <iframe id="flatmobile" src="/game" frameborder="0" width=1000 height=700 style="display: none;"></iframe>
+    <div class="btn" onclick="$('#stonks').show();$(this).hide()"> Stonks </div>
+    <iframe id="stonks" src="https://scratch.mit.edu/projects/485936452/embed" width="800" height="600" style="display: none;"></iframe>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
