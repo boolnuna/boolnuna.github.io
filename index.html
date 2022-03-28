@@ -1,57 +1,20 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="/includer.js"></script>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
+    <div id="nav"></div>
     <!-- <img src="/res/roblo0x ad.jpg" class="horizontal"> -->
-    <img class="img-mous" src="res/mous.png" alt="mous">
+    <img class="img-mous" src="/res/mous.png" alt="mous">
     <h1>Jared's honey bunches</h1>
 
-    <div class="btn" onclick="$('#flatmobile').show();$(this).hide()"> FlatMobile </div>
-    <iframe id="flatmobile" src="/game" frameborder="0" width=1000 height=700 style="display: none;"></iframe>
-    <div class="btn" onclick="$('#stonks').show();$(this).hide()"> Stonks </div>
-    <iframe id="stonks" src="https://scratch.mit.edu/projects/485936452/embed" width="800" height="600"
-        style="display: none;"></iframe>
+    
     <div class="main-content">
         <section id="section1">
             <p5>Relax and play some Games.</p5>
         </section>
     </div>
-    </div>
-
-</body>
-
-<body>
-    <div class="wrapper">
-        <!-- side navigation -->
-        <div class="sidenav">
-            <h3>Games</h3>
-            <div class="container">
-
-                <ul>
-                    <li><a href="#" class="cool-link">FlatMobile</a></li>
-                    <li><a href="#" class="cool-link2">Pong </a></li>
-                    <li><a href="#" class="cool-link3">Stonk </a></li>
-                    <li><a href="#" class="cool-link4">Tetris</a></li>
-
-                </ul>
-                <img src="res/moon.png" id="icon">
-                <script>
-                    var icon = document.getElementById("icon");
-
-                    icon.onclick = function () {
-                        document.body.classList.toggle("dark-theme");
-                        if(document.body.classList.contains("dark-theme")){
-                            icon.src = "res/sun.png";
-                        }else{
-                            icon.src = "res/moon.png";
-                        }
-                    }
-
-                </script>
-
-            </div>
-        </div>
 
 </body>

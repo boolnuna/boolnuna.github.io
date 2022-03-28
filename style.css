@@ -1,23 +1,45 @@
-#icon{
-    margin-left: 30px;
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#darkbtn  {
     width: 30px;
     cursor: pointer;
+    user-select: none;
+}
+
+#menubtn {
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    font-size: 32px;
+    left: 280px;
+    cursor: pointer;
+    user-select: none;
+}
+
+iframe {
+    margin-top: 4rem;
 }
 
 :root{
-    --primary-color: #e6e6e6;
-    --secondary-color: #212121;
-}
-.dark-theme{
     --primary-color: #212121;
     --secondary-color: #e6e6e6;
 }
-body{
-    margin: 0;
-    padding: 0;
-    background: var(--secondary-color);
-    
+
+body {
+    margin-top: auto;
+    padding-bottom: 10rem;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
+
 
 .container{
     position: left;
@@ -124,19 +146,10 @@ li a{
    margin-top: 25px;
     width: 100px;
     position: left;
+    mix-blend-mode: darken;
 }
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
 
-    body {
-        margin-top: auto;
-        padding-bottom: 10rem;
-        font-family: 'Bebas Neue', cursive;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: var(--secondary-color);
-        background-color: var(--primary-color);
-    }
 
     h1 {
 
@@ -171,16 +184,6 @@ li a{
         font-size: larger;
     }
     
-    * {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-
-    }
-
-    body {
-        font-family: sans-serif;
-    }
 
     a {
         color: rgb(187, 187, 187);
@@ -193,10 +196,10 @@ li a{
         position: fixed;
         left: 0;
         top: 0;
-        width: 20vw;
+        width: 265px;
         height: 100vh;
         background: var(--primary-color);
-        border: 0.1em solid var(--secondary-color);
+        border-right: 0.1em solid var(--secondary-color);
         border-top: 10em;
     }
 
