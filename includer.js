@@ -45,6 +45,7 @@ $(document).ready(function () {
 </div>
     `
     $('#nav').html(html)
+    $('body').css('margin-left', '280px')
 })
 
 var menuOpen = false
@@ -53,8 +54,10 @@ function toggleMenu() {
     if (menuOpen) {
         $('.sidenav').hide()
         $('#menubtn').css('left', '12px')
+        $('body').css('margin-left', '0px')
     } else {
         $('.sidenav').show()
         $('#menubtn').css('left', '280px')
+        $('body').css('margin-left', '280px')
     }
 }
